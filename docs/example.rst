@@ -26,12 +26,14 @@ Basic usage
 
     >>> pfr.x_port.value  # get the value of all of the X-port pins
     0
-    >>> pfr.x_pins[0].value  # get the value of one X-port pin
+    >>> pfr.x_pins[0].value  # get the value of X3 X-port pin
     0
+    >>> pfr.x_pins[3].value  # get the value of X0 X-port pin
+    1
 
-    >>> pfr.y_pins[0].value  # get the value of one Y-port pin (Relay Extra)
+    >>> pfr.y_pins[0].value  # get the value of Y3 Y-port pin (Relay Extra)
 
-    >>> bin(pfr.x_port.value)  # fourth pin activated
+    >>> bin(pfr.x_port.value)  # X0 pin activated
     '0b1000'
 
 
